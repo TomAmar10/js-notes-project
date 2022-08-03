@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/project1.css" />
+    <script defer src="js/project1.js"></script>
+    <script defer src="js/sideFuncs.js"></script>
+  </head>
+  <body onload="init()">
+    <center>
+      <h1><b> My Task Board </b></h1>
+      <div class="container-page">
+        <div class="myForm">
+          <form action="javascript:saveTask()">
+            <input type="text" id="task" placeholder="enter task" required />
+            <br />
+            <input type="date" id="date" placeholder="date" required /> <br />
+            <input type="time" id="time" placeholder="time" required /> <br />
+            <br />
+            <div class="buttons">
+              <input type="submit" value="✏️" id="btn-save" />
+              <input type="reset" value="🗑️" id="btn-reset" />
+            </div>
+          </form>
+        </div>
+        <div id="notes"></div>
+        <footer class="footer">
+          <input
+            type="button"
+            id="btn-clear"
+            value="clear board"
+            onclick="deleteAll()"
+          />
+        </footer>
+      </div>
+      <div class="about">
+        © TomAmar 😎 | tomayos1997@gmail.com |
+        <a href="https://www.facebook.com/profile.php?id=100001024704138">
+          <img class="about-img" src="img/facebook.jpg"
+        /></a>
+        |
+        <a href="https://twitter.com/DaiDaiTom">
+          <img class="about-img" src="img/twitter.jpg"
+        /></a>
+        |
+        <a href="https://github.com/TomAmar10">
+          <img class="about-img" src="img/github.jpg"
+        /></a>
+      </div>
+    </center>
+  </body>
+</html>

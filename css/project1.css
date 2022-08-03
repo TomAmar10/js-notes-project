@@ -1,0 +1,171 @@
+body {
+  background-image: url("../img/tile.jpg");
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 60px;
+  color: black;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container-page {
+  display: grid;
+  align-items: center;
+  height: 10rem;
+  width: 120rem;
+  justify-content: center;
+}
+
+form {
+  font-family: cursive "Lucida Sans", Arial, sans-serif;
+  padding-top: 5.3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150rem;
+  height: 23rem;
+  margin-bottom: 1rem;
+  background-image: url("../img/notebook3.jpg");
+}
+
+input {
+  position: relative;
+  text-align: left;
+  background: none;
+  border: none;
+  width: 40rem;
+  font-size: 1.4rem;
+}
+
+#btn-save,
+#btn-reset {
+  width: auto;
+  border-radius: 50%;
+  color: black;
+  font-size: 2.5rem;
+  margin-top: -1rem;
+}
+
+#btn-save:hover,
+#btn-reset:hover {
+  font-size: 3rem;
+}
+
+#btn-clear:hover {
+  font-size: 2.3rem;
+}
+
+#btn-save:active,
+#btn-reset:active,
+#btn-clear:active {
+  box-shadow: 1px 1px;
+  border: 1px solid black;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.note {
+  font-family: cursive;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  margin: 0rem 2.5rem 6rem 0;
+  float: left;
+  left: 8rem;
+}
+
+.animation {
+  animation: fadeIn 1s;
+}
+
+.note-task {
+  position: absolute;
+  text-align: left;
+  width: 13rem;
+  height: 12rem;
+  font-size: 1.6rem;
+  bottom: 4rem;
+  left: 2rem;
+  overflow-x: auto;
+}
+
+.note-details {
+  position: absolute;
+  text-align: left;
+  font-weight: bold;
+  width: 14rem;
+  font-size: 1.4rem;
+  bottom: -2rem;
+  left: 2rem;
+}
+
+.removeBtn-container {
+  position: absolute;
+  bottom: 15.5rem;
+  left: 15rem;
+  font-size: 2rem;
+}
+
+.favorite-btn {
+  position: relative;
+  right: 14.8rem;
+}
+
+.glyphicon-remove {
+  position: relative;
+  top: 2.8rem;
+}
+
+.glyphicon-remove:hover {
+  cursor: pointer;
+  font-size: 2.1rem;
+}
+
+.favorite-btn:hover {
+  cursor: pointer;
+  font-size: 2.1rem;
+}
+
+.footer {
+  visibility: hidden;
+}
+
+#btn-clear {
+  background-color: rgb(208, 22, 22);
+  width: auto;
+  margin: 2rem;
+  margin-bottom: 5rem;
+  border-radius: 10%;
+  height: 4rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 1px black solid;
+  color: black;
+}
+
+.about {
+  background-color: aliceblue;
+  opacity: 0.5;
+  border: 2px black solid;
+  font-size: 1.7rem;
+  position: fixed;
+  bottom: 0rem;
+  width: 100%;
+  height: 3rem;
+}
+
+.about:hover {
+  opacity: 0.9;
+}
+
+.about-img {
+  width: 2.5rem;
+}
